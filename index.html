@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>人生観 ｜ m-note</title>
+<meta name="description" content="どう生きるか、どう決めるか、人とどう関わるか。考えがまとまったことと、まだ答えの出ていない問いを、そのまま並べた個人的なノートです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbfaf8; --ink:#191715; --muted:#7d786f; --faint:#b3ada3;
+    --line:#e6e1d8; --accent:#9a6b3f; --card:#f4f1eb;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#100f0e; --ink:#efece7; --muted:#8b857b; --faint:#5b564e;
+      --line:#262320; --accent:#c79a6b; --card:#181614;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Noto Sans JP",system-ui,sans-serif;
+    font-size:16px; line-height:1.95; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:44rem; margin:0 auto; padding:0 24px}
+  a{color:inherit}
+
+  .top{padding:26px 0 0}
+  .back{
+    display:inline-block; font-size:.74rem; letter-spacing:.1em; color:var(--muted);
+    text-decoration:none; border-bottom:1px solid transparent; transition:.2s;
+  }
+  .back:hover{color:var(--ink); border-color:var(--line)}
+
+  header.hero{padding:76px 0 8px}
+  .eyebrow{
+    font-size:.68rem; letter-spacing:.24em; color:var(--faint);
+    text-transform:uppercase; margin:0 0 22px;
+  }
+  h1{
+    font-family:"Noto Serif JP",serif; font-weight:600;
+    font-size:clamp(1.9rem,5.4vw,2.7rem); line-height:1.5; margin:0 0 26px;
+    letter-spacing:.02em;
+  }
+  .lead{color:var(--muted); font-size:.97rem; margin:0; max-width:32em}
+
+  .chapter{padding:64px 0 0}
+  .chapter > h2{
+    font-family:"Noto Serif JP",serif; font-size:1.28rem; font-weight:600;
+    margin:0 0 6px; letter-spacing:.04em;
+  }
+  .chapter > .note{color:var(--faint); font-size:.8rem; margin:0 0 34px}
+  .rule{height:1px; background:var(--line); border:0; margin:0}
+
+  article{padding:34px 0; border-top:1px solid var(--line)}
+  article:first-of-type{border-top:0}
+  article h3{
+    font-family:"Noto Serif JP",serif; font-size:1.06rem; font-weight:600;
+    margin:0 0 16px; line-height:1.7;
+  }
+  article p{margin:0 0 15px}
+  article p:last-child{margin-bottom:0}
+  .pull{
+    margin:0 0 18px; padding:0 0 0 16px; border-left:2px solid var(--accent);
+    color:var(--ink); font-family:"Noto Serif JP",serif; font-size:1.02rem;
+  }
+  ul.points{margin:0 0 4px; padding-left:1.1em; color:var(--muted)}
+  ul.points li{margin:0 0 8px}
+  ul.points li strong{color:var(--ink); font-weight:500}
+
+  .open{
+    margin-top:64px; padding:38px 26px 30px; background:var(--card);
+    border-radius:3px;
+  }
+  .open h2{
+    font-family:"Noto Serif JP",serif; font-size:1.24rem; font-weight:600;
+    margin:0 0 8px; letter-spacing:.04em;
+  }
+  .open > p{color:var(--muted); font-size:.9rem; margin:0 0 28px}
+  .open h4{
+    font-size:.72rem; letter-spacing:.14em; color:var(--faint);
+    font-weight:500; margin:24px 0 10px;
+  }
+  .open ul{margin:0; padding-left:1.15em}
+  .open li{margin:0 0 9px; color:var(--ink)}
+
+  footer{margin:88px 0 0; padding:30px 0 60px; border-top:1px solid var(--line)}
+  footer p{font-size:.78rem; color:var(--faint); margin:0 0 14px; line-height:1.85}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="top"><a class="back" href="../">← m-note トップ</a></div>
+
+  <header class="hero">
+    <p class="eyebrow">Personal Notes</p>
+    <h1>まとまったことと、<br>まだ答えの出ていないこと。</h1>
+    <p class="lead">
+      どう生きるか、どう決めるか、人とどう関わるか。
+      考えていることを書きためるうちに、少しずつ形になってきたものがあります。
+      同じだけ、まだ答えの出ていない問いも残りました。その両方を並べています。
+    </p>
+  </header>
+
+  <section class="chapter">
+    <h2>自分を知る</h2>
+    <p class="note">自分のことは、自分がいちばん見えていない。</p>
+    <hr class="rule">
+
+    <article>
+      <h3>その言葉は、もともと自分の中にあった</h3>
+      <p class="pull">尊敬する人の言葉のつもりだったが、出てきたのは自分の内側からだった。</p>
+      <p>迷ったとき、尊敬する人ならどう言うだろうと考えてみる。すると答えが出てくる。けれどよく考えると、その言葉はその人が言ったものではない。自分の中にあったものが、その人の姿を借りて出てきただけだった。</p>
+      <p>この方法で自分を眺めてみると、輪郭が見えてきました。</p>
+      <ul class="points">
+        <li><strong>好きなこと</strong> — 学ぶ／整理する／言語化する／体系化する</li>
+        <li><strong>幸せを感じること</strong> — 人との出会い／新しい体験／素敵な人との交流</li>
+        <li><strong>嬉しいこと</strong> — 感謝される／人の役に立つ／成長を認めてもらう</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>話しながら、自分の考えを知る</h3>
+      <p class="pull">人との対話は、自分自身を理解するための手段でもある。</p>
+      <p>人と話していると、自分でも知らなかった考えが口から出てくることがあります。対話は情報を交換する場であると同時に、自分の考えを整理し、気づいていなかった価値観を見つける手段でもある。</p>
+      <p>経営者と話していて、ひとつ仮説が生まれました。会社のビジョンは、その経営者が人生で実現したいことの投影ではないか。会社という形をとっているだけで、根にあるのは個人の人生観なのかもしれません。</p>
+      <p>だから、意識して人に会いに行くようにしています。勉強会、異業種交流会、ただの散歩。自分を知るために、外に出る。</p>
+    </article>
+
+    <article>
+      <h3>危険にではなく、未知に惹かれていた</h3>
+      <p class="pull">「危険なことをする」のではなく、「安全な範囲で未知のものに触れる」。</p>
+      <p>刺激を求めているのだと思っていました。でも整理してみると、惹かれていたのは危険そのものではなく、まだ知らないものでした。</p>
+      <p>非日常には段階があります。日常の小さな変化から、新しい場所・人・趣味、旅行や冒険、そして強いスリルまで。同じ「非日常」という言葉でも、求めているものは段によってまったく違う。</p>
+      <p>安全に管理されたスリルと、コントロールできない現実の危険は、分けて考える。そのうえで、初めての店に入る、いつもと違う道を歩く——その程度のことでも、非日常は増やせます。</p>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <h2>どう決めるか</h2>
+    <p class="note">正しさより、続けられるかどうかで決めている。</p>
+    <hr class="rule">
+
+    <article>
+      <h3>発見するのではなく、作っていく</h3>
+      <p class="pull">人生の意味は「発見するもの」ではなく、生きながら自分で作っていくもの。</p>
+      <p>どこかに正解が埋まっていて、それを探し当てるものだと思っていました。いまは、そうではないと思っています。意味は見つけるものではなく、生きながら作っていくもの。</p>
+      <p>だから判断に迷ったときは、「どちらのほうが楽しいか」に戻ります。ただし前提があって、他人を傷つけない、将来の自分を極端に苦しめない、最低限の責任は果たす。その枠の中での話です。</p>
+      <p>ここでいう楽しさは、単純な快楽だけを指していません。新しい体験も、人とのつながりも、誰かの役に立つことも含んでいます。</p>
+    </article>
+
+    <article>
+      <h3>いかに楽しむかが勝負</h3>
+      <p class="pull">いくら悩んでも、それ自体には何のメリットもない。だったら、いかに楽しむかが勝負。</p>
+      <p>努力を努力としてやらない。「やりたい」「面白い」に変換できれば、努力は努力でなくなります。</p>
+      <p>困難にぶつかったときは、三つ自分に問うことにしています。これは本当にやるべきことか。どうすればもっと楽しくできるか。今回の攻略条件は何か。</p>
+      <p>「努力できる人」より、「努力が必要なことすら楽しめる状態を作れる人」のほうが強いのかもしれない。不必要な苦痛を減らすことと、今を楽しむことは、矛盾しません。</p>
+    </article>
+
+    <article>
+      <h3>誰に考えてもらうかを、自分で考える</h3>
+      <p class="pull">「自分ですべて考える」のではなく、「誰に考えてもらうかを自分で考える」。</p>
+      <p>すべてを自分で判断しようとすると、どこかで限界が来ます。だからといって人任せにするのとも違う。誰に考えてもらうかを自分で決める——そこだけは手放さない、という立ち位置です。</p>
+      <p>では、誰に任せるのか。見るところを三つに絞りました。</p>
+      <ul class="points">
+        <li><strong>実績</strong> — 長期間にわたって成果を出しているか。一時的な成功ではないか</li>
+        <li><strong>考え方</strong> — 理論的に説明できるか。根拠が明確か</li>
+        <li><strong>一貫性</strong> — 過去と現在で主張が矛盾していないか。都合の悪い結果を隠していないか</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <h2>人とどう関わるか</h2>
+    <p class="note">伝え方は、言葉だけではない。</p>
+    <hr class="rule">
+
+    <article>
+      <h3>少しだけ、一緒に冒険する</h3>
+      <p class="pull">単なる「消費」ではなく、人生の思い出を買うような感覚に近い。</p>
+      <p>誰かの挑戦を応援するとき、お金や時間を使っている感覚はあまりありません。近いのは、思い出を買っているという感覚です。</p>
+      <p>そしてそこには循環があります。応援する。共有している感覚が生まれる。思い出になる。自分への刺激になる。新しい挑戦につながる。一周して自分に返ってくる。</p>
+    </article>
+
+    <article>
+      <h3>いつか、と思っているうちに</h3>
+      <p class="pull">「いつか話そう」と思っているうちに、話せなくなる可能性もある。</p>
+      <p>言葉で伝えるのが得意ではありません。長く一緒にいる相手ほど、かえって難しい。</p>
+      <p>それでも、伝える手段は言葉だけではないと気づきました。一緒に食事をする。差し入れをする。何かを手伝う。顔を見せる。一言だけ声をかける。同じ場所で、ただ一緒に過ごす。</p>
+      <p>うまく話せないことを理由に、何もしないでいる必要はない。そう思えるようになりました。</p>
+    </article>
+  </section>
+
+  <section class="open">
+    <h2>まだ答えが出ていない</h2>
+    <p>ここから先は、まだ考えている途中のものです。結論に変えるつもりはなく、問いのまま置いておきます。</p>
+
+    <h4>生きることについて</h4>
+    <ul>
+      <li>人生に「客観的な意味」は必要なのか</li>
+      <li>「今を楽しむ」と「将来に備える」はどう両立するか</li>
+      <li>快楽と幸福は同じものなのか</li>
+      <li>楽しめない状況や楽しめない相手にぶつかったとき、この考え方はどこまで通用するのか</li>
+      <li>「ワクワク」は意図的に作り出せるものなのか、それとも結果的に生まれるものなのか</li>
+    </ul>
+
+    <h4>自分について</h4>
+    <ul>
+      <li>なぜ人間は刺激を求めるのか</li>
+      <li>安定と刺激の最適なバランスはどこにあるのか</li>
+      <li>年齢を重ねると、非日常を求める気持ちは変化するのか</li>
+      <li>「未知への挑戦」は自己理解にもつながるのではないか</li>
+      <li>尊敬する人を通して助言を引き出す手法を、日常の意思決定にどう応用するか</li>
+      <li>セルフコンパッションを、習慣としてどう日々に置くか</li>
+    </ul>
+
+    <h4>人と、仕事と</h4>
+    <ul>
+      <li>自分より優秀な人を、どうやって見抜くか</li>
+      <li>「能力」と「人格・誠実性」はどのように評価するか</li>
+      <li>信頼している人が間違い始めたことを、どう検知するか</li>
+      <li>「任せる」と「丸投げ」の境界はどこか</li>
+      <li>「会社のビジョン＝経営者の実現したい人生」という仮説は、他の経営者にも当てはまるのか</li>
+      <li>日々の仕事の中の「小さな自己実現」は、具体的に何をすることなのか</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>専門家ではない個人が、日々考えたことを書きとめた個人的なまとめです。内容の正確性を保証するものではありません。</p>
+    <p><a class="back" href="../">← m-note トップ</a></p>
+  </footer>
+</div>
+
+</body>
+</html>
