@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>人生観 ｜ m-note</title>
-<meta name="description" content="どう生きるか、どう決めるか、人とどう関わるか。考えがまとまったことと、まだ答えの出ていない問いを、そのまま並べた個人的なノートです。">
+<title>人生観｜まとめノート</title>
+<meta name="description" content="どこへ向かうか(人生のKGI)、どう決めるか、人とどう関わるか。考えがまとまったことと、まだ答えの出ていない問いを、そのまま並べた個人的なノートです。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
@@ -87,6 +87,31 @@
   .open ul{margin:0; padding-left:1.15em}
   .open li{margin:0 0 9px; color:var(--ink)}
 
+  .kgi{
+    margin:0 0 8px; padding:30px 26px; background:var(--card); border-radius:3px;
+  }
+  .kgi .label{font-size:.68rem; letter-spacing:.24em; color:var(--accent); margin:0 0 12px}
+  .kgi .goal{
+    font-family:"Noto Serif JP",serif; font-weight:600; font-size:clamp(1.15rem,3.4vw,1.4rem);
+    line-height:1.8; margin:0 0 16px;
+  }
+  .kgi p{margin:0 0 12px; font-size:.95rem}
+  .kgi .small{color:var(--muted); font-size:.82rem; margin:0}
+  ol.voices{list-style:none; margin:0; padding:0}
+  ol.voices li{
+    font-family:"Noto Serif JP",serif; font-size:1.02rem; padding:10px 0;
+    border-top:1px solid var(--line);
+  }
+  ol.voices li:last-child{border-bottom:1px solid var(--line)}
+  .pair{display:grid; grid-template-columns:1fr; gap:14px; margin:6px 0 18px}
+  @media (min-width:640px){ .pair{grid-template-columns:1fr 1fr} }
+  .pair div{padding:18px 20px; border:1px solid var(--line); border-radius:3px}
+  .pair div.to{border-color:var(--accent)}
+  .pair h4{font-size:.7rem; letter-spacing:.18em; color:var(--faint); font-weight:500; margin:0 0 8px}
+  .pair div.to h4{color:var(--accent)}
+  .pair ul{margin:0; padding-left:1.1em; font-size:.92rem; color:var(--muted)}
+  .pair li{margin:0 0 6px}
+
   footer{margin:88px 0 0; padding:30px 0 60px; border-top:1px solid var(--line)}
   footer p{font-size:.78rem; color:var(--faint); margin:0 0 14px; line-height:1.85}
 </style>
@@ -100,11 +125,97 @@
     <p class="eyebrow">Personal Notes</p>
     <h1>まとまったことと、<br>まだ答えの出ていないこと。</h1>
     <p class="lead">
-      どう生きるか、どう決めるか、人とどう関わるか。
+      どこへ向かうか、どう決めるか、人とどう関わるか。
       考えていることを書きためるうちに、少しずつ形になってきたものがあります。
       同じだけ、まだ答えの出ていない問いも残りました。その両方を並べています。
     </p>
   </header>
+
+  <section class="chapter" id="direction">
+    <h2>どこへ向かうか</h2>
+    <p class="note">人生のKGI。人生を採点するためではなく、迷ったときに方向を確かめるための指針。</p>
+    <hr class="rule">
+
+    <article>
+      <div class="kgi">
+        <p class="label">MY LIFE KGI</p>
+        <p class="goal">自分の意思で自由に生き、<br>世界を知る楽しさと、人生の豊かな体験を味わう。</p>
+        <p>仕事や周囲の期待に振り回されず、大切にしたいことを自分で選ぶ。好奇心のままに世界を知り、景色や文化、人との関わりに心を動かされ、楽しい時間を重ねていく。そんな暮らしを、安心して続けられるようにする。</p>
+        <p class="small">人生のすべてを評価する基準ではない。完璧にすることも、お金を最大化することも目指していない。</p>
+      </div>
+    </article>
+
+    <article>
+      <h3>人生の終わりに、こう思えたら</h3>
+      <ol class="voices">
+        <li>いろいろな世界を見られてよかった。</li>
+        <li>たくさんのことを知れて面白かった。</li>
+        <li>自分の意思で生きられた。</li>
+        <li>楽しい時間がたくさんあった。</li>
+        <li>いろんな人と関わり合えた。</li>
+      </ol>
+    </article>
+
+    <article>
+      <h3>知ること自体に、価値がある</h3>
+      <p class="pull">誰にも評価されず、褒められなくても、やりたいことは変わらない。</p>
+      <p>役に立つかどうか、成長につながるかどうかとは関係なく、世界そのものを知りたい。そして知識だけでなく、実際に触れて、感じたい。人生の価値は一つの尺度に集めなくていい。</p>
+      <ul class="points">
+        <li><strong>知る</strong> — 知らないことを知り、理解する</li>
+        <li><strong>感じる</strong> — 景色の壮大さに感動し、古い建物や絵画に込められた思いに思いを馳せる</li>
+        <li><strong>歩く</strong> — 気の向くままに旅をし、自然の中で過ごし、歴史ある街を歩く</li>
+        <li><strong>関わる</strong> — 人と話して、新しい考え方に触れる</li>
+        <li><strong>創る</strong> — 成果に結びつかなくても、創ることそのものを楽しむ</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>精神的な自由を、いちばん大事にする</h3>
+      <p class="pull">自分の意思で生きることは、欲求のままに生きることとは違う。</p>
+      <p>仕事や周りの人に振り回されず、自分で選ぶこと。求めている自由は、時間やお金の自由だけではなく、何よりも心の自由です（この考え方は、下の章「自分で選ぶ」にもつながっています）。</p>
+    </article>
+
+    <article>
+      <h3>仕事とお金は、手段</h3>
+      <p class="pull">経済的な安心は大切。でも、お金を増やすことが目的にすり替わることは望まない。</p>
+      <p>仕事にも楽しさはあるけれど、人生の中心ではなく暮らしの一部。将来は週3日ほどの勤務で、今と同じくらいの暮らしを保ちたい。働く時間を減らすこと自体が目的ではなく、自由な時間の中で大切にしたいことを楽しめる状態がほしい。</p>
+    </article>
+
+    <article>
+      <h3>いまいる場所と、向かう場所</h3>
+      <div class="pair">
+        <div>
+          <h4>いま</h4>
+          <ul>
+            <li>仕事は楽しいが、人生の中心にはしたくない</li>
+            <li>振り回されない心の自由を求めている</li>
+            <li>安心は大切だが、お金に囚われたくない</li>
+          </ul>
+        </div>
+        <div class="to">
+          <h4>これから</h4>
+          <ul>
+            <li>行動と時間の使い方を自分で選べる</li>
+            <li>自然・歴史・建築・美術、交流や創作を楽しめる</li>
+            <li>安心を保ちながら、働く時間を減らせる</li>
+          </ul>
+        </div>
+      </div>
+      <p>そのあいだにあるのは、時間と仕事のバランス、何が心の自由を損なっているのか、望む体験にいまどれだけ時間を使えているか、そして安心を保ったまま働き方を変える方法。どれも方向は定まり、具体的にはこれからです。</p>
+    </article>
+
+    <article>
+      <h3>日々の中で思い出すこと</h3>
+      <p>義務でもKPIでもない、指針を暮らしの中で思い出すための手がかり。</p>
+      <ul class="points">
+        <li>何かを決めるとき、それを自分の意思で選んでいるかを意識する</li>
+        <li>振り回されていると感じたら、何が自由を損なっているのかを振り返る</li>
+        <li>心惹かれる世界——自然、歴史ある街、建築、美術——に触れる機会をつくる</li>
+        <li>知ることや創ることを、実用性や成果に結びつけずに楽しむ</li>
+        <li>人との関わりを、義務ではなく自分が価値を感じる形で大切にする</li>
+      </ul>
+    </article>
+  </section>
 
   <section class="chapter">
     <h2>自分を知る</h2>
@@ -236,6 +347,14 @@
       <li>セルフコンパッションを、習慣としてどう日々に置くか</li>
       <li>自分が深く没頭できるときには、どんな共通条件があるのか</li>
       <li>「本当に望んでいること」と「こうあるべき」を、日常の中でどう見分けるか</li>
+    </ul>
+
+    <h4>暮らしと、時間と</h4>
+    <ul>
+      <li>日常の中で、精神的な自由を保つにはどうすればいいか</li>
+      <li>仕事や人間関係に、どんな境界線を引けば自分の意思を保ちやすいか</li>
+      <li>好奇心や関心を満たす時間を、いまの暮らしにどう増やしていくか</li>
+      <li>経済的な安心を損なわずに、週3日ほどの働き方をどう実現するか</li>
     </ul>
 
     <h4>人と、仕事と</h4>
